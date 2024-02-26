@@ -13,9 +13,11 @@
   you will use for testing) to determine the final score. So refrain
   from hard coding solutions.
 
-- Submit a zip file with the name `<id_no>\_lab5.zip` containing your
+- Submit a zip file with the name `<id_no>_lab5.zip` containing your
   implementation of client and server. It should be a zip of this repo.
   Ensure the impl folder is present and contains server.c.
+  
+- **To evaluate:** run `./server_eval` and ensure you are in the `./eval` directory
 
 Please note the binary is meant to verify or evaluate your code, **not
 for debugging it**. If you wish to use it to debug, do so at your own
