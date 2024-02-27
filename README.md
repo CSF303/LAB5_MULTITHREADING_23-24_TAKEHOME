@@ -18,7 +18,8 @@
   implementation of client and server. It should be a zip of this repo.
   Ensure the impl folder is present and contains server.c.
   
-- **To evaluate:** run `./server_final` and ensure you are in the `./eval` directory
+- **To evaluate:** run `./server_final` and ensure you are in the `./eval` directory.
+- You may also run `./server_final <wait_time>` in order to increase the sleep time after connections are initiated. (default of 3)
 
 Please note the binary is meant to verify or evaluate your code, **not
 for debugging it**. If you wish to use it to debug, do so at your own
