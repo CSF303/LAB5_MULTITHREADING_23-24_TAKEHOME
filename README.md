@@ -46,11 +46,13 @@ utilizing **multithreading** to send and receive messages in parallel.
 ### **client.c**
 
 - The client will take in IP address, port and username through CLI
-  arguments in the format: `./a.out <ip_address> <port> <username>`
+  arguments in the format: `./a.out <ip_address> <port>`
   and connect to the server.
 
-- The `<username>` will be sent to the server as the first message after
-  the server accepts the connection. (Details in the example below)
+- A `<username>` will be sent to the server as the first message after
+  the server accepts the connection. (Details in the example at the bottom)
+  
+- The client will be referred to by this `<username>`
 
 - The client will take input through stdin and send it to the server.
 
@@ -75,6 +77,8 @@ utilizing **multithreading** to send and receive messages in parallel.
 - The server must be able to receive data from all clients in parallel
   using multithreading. **Prerequisite for further evaluation**
 
+- The client will send messages that start with a 4 letter command. The server's behaviour will depend on this command.
+
 - Based on the data received from the client, the server will perform
   different functions:
 
@@ -88,7 +92,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 #### **`MSGC:<receiver_username>:<message>\n` (1 mark)**
 
-- The server will read `<receiver_username>` and send `<message>` to
+- The server will read `<receiver_username>` and send `<message>\n` to
   that user in the format `<sender_username>:<message>\n`.
 
 - If the user does not exist, the server will send `USER NOT FOUND\n` back
@@ -109,8 +113,8 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 #### **`MCST:<groupname>:<message>\n` (0.5 + 0.5 marks)**
 
-- The server will send the `<message>` to all users in the mentioned
-  group, except the user who sent the message. **(0.5 marks)**
+- The server will send the `<message>\n` to all users in the mentioned
+  group. **(0.5 marks)**
 
 - If the `<groupname>` does not exist, the server will send `GROUP <groupname> NOT FOUND\n` back to the sender. **(0.5 marks)**
 
@@ -119,7 +123,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 #### **`BCST:<message>\n` (0.5 marks)**
 
-- The server will send the `<message>` to all the connected clients
+- The server will send the `<message>\n` to all the connected clients
   excluding the client who sent the message.
 
 #### **`HIST\n` (1 mark)**
@@ -130,23 +134,25 @@ utilizing **multithreading** to send and receive messages in parallel.
   sent by the user. \n will be used as the delimiter between each
   sender's messages.
 
-- E.g. if user bob sends the message `MSGC:alice:banana`, the history will
-  show: `bob-MESG:alice:banana`.
+- E.g. if user bob sends the message `MSGC:alice:banana\n`, the history will
+  show: `bob-MESG:alice:banana`. With '\n' as the delimiter.
+  
+- Note: The `<username>` sent by a newly connected client will not be logged for history.
 
 #### **`EXIT\n` (1 marks)**
 
 - The server will stop listening for that client.
 
-- **Note:** Ensure if a client sends `EXIT` it will no longer show in the
-  `LIST` of clients.
+- **Note:** Ensure if a client sends `EXIT\n` it will no longer show in the
+  `LIST\n` of clients.
 
 If the server receives a message which is not a part of any of these
-commands, send `INVALID COMMAND` back to the sender.
+commands, send `INVALID COMMAND\n` back to the sender.
 
 An example communication as observed in the client side (alice):
 
 ```
-[cli] ./a.out 127.0.0.1 4444 alice
+[cli] ./a.out 127.0.0.1 4444
 
 [cli] alice\n
 
