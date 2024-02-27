@@ -18,7 +18,7 @@
   implementation of client and server. It should be a zip of this repo.
   Ensure the impl folder is present and contains server.c.
   
-- **To evaluate:** run `./server_eval` and ensure you are in the `./eval` directory
+- **To evaluate:** run `./server_final` and ensure you are in the `./eval` directory
 
 Please note the binary is meant to verify or evaluate your code, **not
 for debugging it**. If you wish to use it to debug, do so at your own
@@ -151,6 +151,7 @@ commands, send `INVALID COMMAND\n` back to the sender.
 
 An example communication as observed in the client side (alice):
 
+The comminication is from alice's POV, and will show messages from different users.
 ```
 [cli] ./a.out 127.0.0.1 4444
 
