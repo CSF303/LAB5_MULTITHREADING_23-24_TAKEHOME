@@ -95,7 +95,8 @@ utilizing **multithreading** to send and receive messages in parallel.
   to the sender.
 
 #### **`GRPS:<user1>,<user2>,...,<usern>:<groupname>\n` (0.5 + 0.5 marks)**
-
+- This command indicates that a client want to create a user-group with name `<groupname>`. This group will have the indicated users
+   
 - The server will create a group consisting of `<user1>`,
   `<user2>,...,<usern>` with group identified by `<groupname>`. **(0.5
   marks)**
