@@ -89,7 +89,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 #### **`MSGC:<receiver_username>:<message>\n` (1 mark)**
 
 - The server will read `<receiver_username>` and send `<message>` to
-  that user in the format `<sender_username>:<message>`.
+  that user in the format `<sender_username>:<message>\n`.
 
 - If the user does not exist, the server will send `USER NOT FOUND\n` back
   to the sender.
