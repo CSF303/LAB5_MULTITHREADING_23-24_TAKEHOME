@@ -149,6 +149,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 If the server receives a message which is not a part of any of these
 commands, send `INVALID COMMAND\n` back to the sender.
 
+## Example
 An example communication as observed in the client side (alice):
 
 The comminication is from alice's POV, and will show messages from different users.
