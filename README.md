@@ -193,7 +193,7 @@ The comminication is from alice's POV, and will show messages from different use
 [cli] HIST\n
 
 [data from server]
-eve-MSGC:alice:online?\nalice-MSGC:bob:hello\nalice-MSGC:eve:yes\nalice-MSGC:xxx:hello\nalice-MCST:goodOnes:eveIsEvil\neve-BCST:tryingToHack\nalice-MCST:goodS:evil\nalice-BCST:helloAll\n
+alive-LIST\neve-MSGC:alice:online?\nalice-MSGC:bob:hello\nalice-MSGC:eve:yes\nalice-MSGC:xxx:hello\nalice-GRPS:alice,bob:goodOnes\nalice-GRPS:alice,xxx:goodOnes\nalice-MCST:goodOnes:eveIsEvil\neve-BCST:tryingToHack\nalice-MCST:goodS:evil\nalice-BCST:helloAll\nalice-HIST\n
 
 [cli] EXT\n
 
