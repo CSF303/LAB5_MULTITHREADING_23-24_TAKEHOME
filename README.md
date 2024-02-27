@@ -69,7 +69,7 @@ utilizing **multithreading** to send and receive messages in parallel.
   the format: `./a.out <ip_address> <port>` and run on that ip and
   port.
 
-- The server will listen to a max of 1024 and can accept any amount of
+- The server will listen to a max of 1024 connections, although it can accept any amount of
   client connections. (Requirement for server evaluation)
 
 - The server must be able to receive data from all clients in parallel
