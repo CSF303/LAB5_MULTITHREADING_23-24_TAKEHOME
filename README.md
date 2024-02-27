@@ -1,7 +1,6 @@
 # **LAB5_MULTITHREADING_23-24**
 ## Important
-- The binary for Mac is not currently available
-- If you are facing issues such as inconsistent evauation, and are using WSL, please try using a VM, native Linux or the CC lab machines.
+- If you are facing issues such as inconsistent evaluation, and are using WSL, please try using a VM, native Linux or the CC lab machines.
 ## **Instructions**
 
 - This lab will be evaluated automatically.
