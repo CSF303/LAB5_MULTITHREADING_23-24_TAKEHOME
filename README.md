@@ -46,7 +46,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 ### **client.c**
 
-- The client will take in IP address, port and username through CLI
+- The client will take in IP address, port through CLI
   arguments in the format: `./a.out <ip_address> <port>`
   and connect to the server.
 
@@ -161,7 +161,7 @@ The comminication is from alice's POV, and will show messages from different use
 
 [cli] LIST\n
 
-[data from server] alice\nbob\neve\n
+[data from server] alice:bob:eve\n
 
 [data from server] eve:online?
 
