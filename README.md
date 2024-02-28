@@ -108,6 +108,8 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 - `<groupname>` will be a single word without spaces or special characters.
 
+- On Successful group creation, the server sends back `GROUP <groupname> CREATED\N`
+
 - If any of the listed users not available, then the server will return
   `INVALID USERS LIST\n` and would not create the group at all. **(0.5
   marks)**
