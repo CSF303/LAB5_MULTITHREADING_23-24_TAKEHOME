@@ -116,7 +116,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 #### **`MCST:<groupname>:<message>\n` (0.5 + 0.5 marks)**
 
-- The server will send the `<message>\n` to all users in the mentioned
+- The server will send the `<sender_username>:<message>\n` to all users in the mentioned
   group. **(0.5 marks)**
 
 - If the `<groupname>` does not exist, the server will send `GROUP <groupname> NOT FOUND\n` back to the sender. **(0.5 marks)**
@@ -126,7 +126,7 @@ utilizing **multithreading** to send and receive messages in parallel.
 
 #### **`BCST:<message>\n` (0.5 marks)**
 
-- The server will send the `<message>\n` to all the connected clients
+- The server will send the `<sender_username>:<message>\n` to all the connected clients
   excluding the client who sent the message.
 
 #### **`HIST\n` (1 mark)**
