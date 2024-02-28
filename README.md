@@ -148,7 +148,7 @@ utilizing **multithreading** to send and receive messages in parallel.
   sender's messages.
 
 - E.g. if user bob sends the message `MSGC:alice:banana\n`, the history will
-  show: `bob-MESG:alice:banana`. With '\n' as the delimiter.
+  show: `bob-MSGC:alice:banana`. With '\n' as the delimiter.
   
 - Note: The `<username>` sent by a newly connected client will not be logged for history.
 
