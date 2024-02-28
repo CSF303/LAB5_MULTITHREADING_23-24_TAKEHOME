@@ -17,7 +17,17 @@
 - Submit a zip file with the name `<id_no>_lab5.zip` containing your
   implementation of client and server. It should be a zip of this repo.
   Ensure the impl folder is present and contains server.c.
-  
+
+Example Submission of necessary files, (you may have extra folders/files, it wont change anything):
+```
+<id_no>_lab5.zip
+└── impl
+    └── server.c
+```
+
+
+<br>
+
 - **To evaluate:** run `./server_final` and ensure you are in the `./eval` directory.
 - You may also run `./server_final <wait_time>` in order to increase the sleep time after connections are initiated. (default of 3)
 
