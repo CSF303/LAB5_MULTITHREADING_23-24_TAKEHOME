@@ -61,9 +61,9 @@ utilizing **multithreading** to send and receive messages in parallel.
   and connect to the server.
 
 - A `<username>` will be sent to the server as the first message after
-  the server accepts the connection. (Details in the example at the bottom)
+  the server accepts the connection (Details in the example at the bottom). Note carefully that the client doesn't include `\n` along with the `<username>` sent!
   
-- The client will be referred to by this `<username>`
+- The client will be referred to by this `<username>`.
 
 - The client will take input through stdin and send it to the server.
 
@@ -148,7 +148,7 @@ utilizing **multithreading** to send and receive messages in parallel.
   sender's messages.
 
 - E.g. if user bob sends the message `MSGC:alice:banana\n`, the history will
-  show: `bob-MSGC:alice:banana`. With '\n' as the delimiter.
+  show: `bob-MSGC:alice:banana`. With `\n` as the delimiter.
   
 - Note: The `<username>` sent by a newly connected client will not be logged for history.
 
@@ -175,7 +175,7 @@ The comminication is from alice's POV, and will show messages from different use
 
 [data from server] alice:bob:eve\n
 
-[data from server] eve:online?
+[data from server] eve:online?\n
 
 [cli] MSGC:bob:hello\n
 
