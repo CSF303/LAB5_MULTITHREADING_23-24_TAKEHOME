@@ -1,4 +1,4 @@
-# **LAB5_MULTITHREADING_23-24**
+# **LAB5_MULTITHREADING_23-24_TAKE-HOME**
 ## Important
 - If you are facing issues such as inconsistent evaluation, and are using WSL, please try using a VM, native Linux or the CC lab machines.
 ## **Instructions**
